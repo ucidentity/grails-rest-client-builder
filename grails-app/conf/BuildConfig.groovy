@@ -23,6 +23,12 @@ grails.project.dependency.resolution = {
         // Newer dependency for rest-client-builder that includes Grails 2.5
         // fix.  Built from a fork, ucidentity/grails-data-mapping branch
         // 3.x-grails2.5-fix-ucb.
+        //
+        // Needed until
+        // https://github.com/grails/grails-data-mapping/pull/591 is merged
+        // into grails/grails-data-mapping and until rest-client-builder
+        // authors use a grails-datastore-rest-client version that contains
+        // that fix.
         compile 'org.grails:grails-datastore-rest-client:3.1.6-UCB1-BUILD-SNAPSHOT', {
             exclude group:'javax.servlet', name:'javax.servlet-api'
             exclude group:'commons-codec', name:'commons-codec'
