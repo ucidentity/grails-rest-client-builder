@@ -14,7 +14,9 @@ grails.project.dependency.resolution = {
     log 'warn'
 
     repositories {
+        mavenLocal()
         mavenRepo id: "calnet-repo", url: "https://maven.calnet.berkeley.edu/artifactory/all/"
+        jcenter()
         grailsCentral()
         mavenCentral()
     }
